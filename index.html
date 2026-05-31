@@ -747,9 +747,6 @@ function saveNotifTime(v) { localStorage.setItem('dci_notif_time', v); showToast
   }
 })();
 
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/daily-checkin/sw.js').catch(()=>{});
-}
 </script>
 </body>
 </html>
